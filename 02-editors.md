@@ -68,6 +68,6 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> I am currently using Atom. An interesting feature of Atom is that ctrl + \ opens tree mode.
+>> I am currently using Atom. An interesting feature of Atom is when you double click a word, all the instances of that word become highlighted. A useful keyword shortcut is that ctrl + \ opens tree mode so you can see all your files and file folders.
 
  
