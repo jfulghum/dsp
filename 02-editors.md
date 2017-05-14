@@ -68,6 +68,6 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> I am currently using Atom. An interesting feature of Atom is when you double click a word, all the instances of that word become highlighted. A useful keyword shortcut is that ctrl + \ opens tree mode so you can see all your files and file folders.
+>> I am currently using Atom, because it has been recommended to me in the past. An interesting feature of Atom is when you double click a word, all the instances of that word become highlighted. You can also highlight text to drag and drop it in the editor. A useful keyword shortcut is that ctrl + \ opens tree mode so you can see all your files and file folders. You can also use cmd shift H to open the gitplus feature to use git without the terminal.
 
  
