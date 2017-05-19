@@ -7,28 +7,47 @@ Read Allen Downey's [Think Python](http://www.greenteapress.com/thinkpython/) fo
 For quick and easy interactive practice with Python, many people enjoy [Codecademy's Python track](http://www.codecademy.com/en/tracks/python). There's also [Learn Python The Hard Way](http://learnpythonthehardway.org/book/) and [The Python Tutorial](https://docs.python.org/2/tutorial/).
 
 ---
-
-###Q1. Lists &amp; Tuples
+### Q1. Lists &amp; Tuples
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Tuples are immutable, meaning they can't be edited. Lists can be edited. 
 
 ---
 
-###Q2. Lists &amp; Sets
+### Q2. Lists &amp; Sets
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+["Johanna", "Nick", "Patrick", "Cloud"] is an example of a list.  Lists are ordered.
+{"Johanna", "Nick", "Patrick", "Cloud"} is an example of a set. Sets are unordered, just like dictionaries.
+Sets kind of look like dictionaries, just without keys. Sets are required to be hashable.
+
+Lists and sets both contain values. 
 
 ---
 
-###Q3. Lambda Function
+### Q3. Lambda Function
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lambda is another way of writing a function. 
+
+Here's a function for squaring a number:
+
+def square(num):
+  num ** 2
+  
+print square(3)
+9
+
+Here's the same function using lambda instead. 
+
+square = lambda num: num ** 2
+print square(3)
+9
+
+---
 
 ---
 
