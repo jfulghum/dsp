@@ -55,7 +55,18 @@ print square(3)
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Most of the time we create a list, edit the output one by one, and then append it to a new list.
+Like this:
+
+items = [1,2,3,4,5]
+squared = []
+for item in items:
+  squared.append(item ** 2)
+  
+Map allows us to do this in a much simpler way.
+
+items = [1, 2, 3, 4, 5]
+squared = list(map(lambda x: x**2, items))
 
 ---
 
@@ -64,6 +75,16 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 ###Q5. Datetime
 Use Python to compute days between start and stop date.   
 a.  
+from datetime import date
+
+d0 = date(2013, 1, 2)
+d1 = date(2015, 7, 28)
+delta = d0 - d1
+print(delta.days)
+
+-207
+
+So 207 days.
 
 ```
 date_start = '01-02-2013'    
@@ -73,6 +94,17 @@ date_stop = '07-28-2015'
 >> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
 
 b.  
+
+import datetime import date
+
+d0 = date(2013, 12, 31)
+d1 = date(2015, 5, 28)
+delta = d0 - d1
+print(delta.days)
+
+-517
+
+So 517 days. 
 ```
 date_start = '12312013'  
 date_stop = '05282015'  
@@ -81,6 +113,9 @@ date_stop = '05282015'
 >> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
 
 c.  
+-7850
+
+So 7850 days. 
 ```
 date_start = '15-Jan-1994'      
 date_stop = '14-Jul-2015'  
