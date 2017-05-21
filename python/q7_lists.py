@@ -39,10 +39,10 @@ print(front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark']) == ['xanadu', 'xyz'
 
 
 """
-Given a list of strings, return a list with the strings in sorted
-order, except group all the strings that begin with 'x' first.
-e.g. ['mix', 'xyz', 'apple', 'xanadu', 'aardvark'] yields
-['xanadu', 'xyz', 'aardvark', 'apple', 'mix'].
+    Given a list of non-empty tuples, return a list sorted in
+    increasing order by the last element in each tuple.
+    e.g. [(1, 7), (1, 3), (3, 4, 5), (2, 2)] yields
+         [(2, 2), (1, 3), (3, 4, 5), (1, 7)].
 """
 
 def sort_last(tuples):
