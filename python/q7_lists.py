@@ -39,21 +39,21 @@ print(front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark']) == ['xanadu', 'xyz'
 
 
 """
-    Given a list of non-empty tuples, return a list sorted in
-    increasing order by the last element in each tuple.
-    e.g. [(1, 7), (1, 3), (3, 4, 5), (2, 2)] yields
-         [(2, 2), (1, 3), (3, 4, 5), (1, 7)].
+Given a list of non-empty tuples, return a list sorted in
+increasing order by the last element in each tuple.
+e.g. [(1, 7), (1, 3), (3, 4, 5), (2, 2)] yields
+[(2, 2), (1, 3), (3, 4, 5), (1, 7)].
 """
 
 def sort_last(tuples):
-    
-    
+    return sorted(tuples, key = tuples[-1])
+        
 
 print(sort_last([(1, 3), (3, 2), (2, 1)]) ==  [(2, 1), (3, 2), (1, 3)])
 print(sort_last([(2, 3), (1, 2), (3, 1)]) == [(3, 1), (1, 2), (2, 3)])
 print(sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)] == [(2, 2), (1, 3), (3, 4, 5), (1, 7)])
-
-
+      
+      
 """
 Given a list of numbers, return a list where all adjacent equal
 elements have been reduced to a single element, so [1, 2, 2, 3]
@@ -61,12 +61,22 @@ returns [1, 2, 3]. You may create a new list or modify the passed
 in list.
 """
     
-def remove_adjacent(nums):
+def remove_adjacent(seq): 
+    i = 1
+    n = len(seq)
+    while i < n:
+        if seq[i] == seq[i-1]:
+            del(seq[i])
+            n -= 1
+        else:
+            i +=1
+    return seq 
+            
     
 print(remove_adjacent([1, 2, 2, 3]) == [1, 2, 3])
 print(remove_adjacent([2, 2, 3, 3, 3]) == [2, 3])
 print(remove_adjacent([3, 2, 3, 3, 3]) == [3, 2, 3])
-print(remove_adjacent([]))
+
 
 """
 Given two lists sorted in increasing order, create and return a
@@ -76,6 +86,7 @@ time, making a single pass of both lists.
 """
 
 def linear_merge(list1, list2):
+    return sorted(list1 + list2)
     
 print(linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc']) == ['aa', 'bb', 'cc', 'xx', 'zz'])
 print(linear_merge(['aa', 'xx'], ['bb', 'cc', 'zz']) == ['aa', 'bb', 'cc', 'xx', 'zz'])
