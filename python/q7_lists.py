@@ -3,13 +3,18 @@ Given a list of strings, return the count of the number of strings
 where the string length is 2 or more and the first and last chars
 of the string are the same.
 """
-
 def match_ends(words):
+    count = 0
+    for word in words:
+        if len(word) > 2 and word[0]== word[-1]:
+            count += 1
+    return count
     
 
 print(match_ends(['aba', 'xyz', 'aa', 'x', 'bbb']) == 3)
 print(match_ends(['', 'x', 'xy', 'xyx', 'xx']) == 2)
 print(match_ends(['aaa', 'be', 'abc', 'hello']) == 1)
+
 
 """
 Given a list of strings, return a list with the strings in sorted
@@ -18,8 +23,15 @@ e.g. ['mix', 'xyz', 'apple', 'xanadu', 'aardvark'] yields
 ['xanadu', 'xyz', 'aardvark', 'apple', 'mix'].
 """
 
-print(def front_x(words):
-
+def front_x(words):
+    words.sort() #first sort the words.
+    index = 0
+    for word in words:
+        if word.startswith("x"): # now all the x's will be at the back. I suppose this is truer with z's. what is there's a z word?
+            index = words.index(word)
+            break
+    return words[index:] + words[:index]
+  
 print(front_x(['bbb', 'ccc', 'axx', 'xzz', 'xaa']) == ['xaa', 'xzz', 'axx', 'bbb', 'ccc'])
 print(front_x(['ccc', 'bbb', 'aaa', 'xcc', 'xaa']) == ['xaa', 'xcc', 'aaa', 'bbb', 'ccc'])
 print(front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark']) == ['xanadu', 'xyz', 'aardvark', 'apple', 'mix'])
