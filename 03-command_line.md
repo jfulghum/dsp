@@ -9,7 +9,16 @@ tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehard
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+pwd    print working directory
+mkdir  make directory
+cd     change directory
+rmdir  remove directory
+mv     move file or directory
+pushd  push directory
+cat    print the whole thing
+echo   print some arguments
+grep   find things inside
+xargs  execute arguments
 
 ---
 
