@@ -24,7 +24,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+ls      list all the files in the directory you're in.
+ls -a   list all hidden files starting with "."
+ls -l   list with long format, show permissions
+ls -lh  list with long  format with readable file size
+ls -lah list produce a long style list (ie will include attributes) of all files 
+ls -t   list by date, time
+ls -Glp list the same this as Glp help
 
 ---
 
@@ -32,15 +38,17 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+ls -x Displays files as rows across the screen.
+ls -1	Displays each entry on a line.
+ls -c	Displays files by file timestamp.
+ls -C	Displays files in a columnar format (default)
+ls -d	Displays only directories.
 ---
 
 ###Q4.  Xargs   
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+xargs is a command on Unix and most Unix-like operating systems used to build and execute command lines from standard input.
  
 
